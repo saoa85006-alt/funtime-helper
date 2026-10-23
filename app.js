@@ -114,6 +114,7 @@ const screens = {
   // временная заглушка раздела «Клан»
   clan: () => ({ title: 'Клан', back: 'menu', html: '<p class="bigtext">Тебе нахуй не нужны кланы, ты и сам справляешься</p>' }),
   profit: () => window.profitScreen(),
+  plans: () => window.plansScreen(),
 };
 PVE_SECTIONS.forEach(([id, t]) => { screens['pve-' + id] = () => placeholder(t, 'pve'); });
 screens['pve-nosp'] = () => window.farmsScreen();

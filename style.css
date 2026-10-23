@@ -371,3 +371,18 @@ b.q{display:inline-block;margin-left:4px;padding:0 5px;background:var(--yellow);
 
 /* временная надпись в разделе «Клан» */
 .bigtext{margin:48px 0 0;text-align:center;font-size:clamp(28px,8vw,44px);font-weight:900;line-height:1.2;letter-spacing:.01em;text-wrap:balance;text-shadow:0 0 24px rgba(232,39,42,.45)}
+
+/* планы */
+.planadd{grid-template-columns:1fr 52px;padding:10px}
+.cin.plantext{text-align:left;font-size:16px}
+.plans{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.plan{display:grid;grid-template-columns:34px 1fr 34px;gap:12px;align-items:center;padding:10px 12px;background:var(--surface);border:1px solid var(--line)}
+.plan .pt{line-height:1.45;word-break:break-word}
+.plan.done .pt{color:var(--dim);text-decoration:line-through}
+.chk{width:30px;height:30px;padding:0;background:#0b0b0e;border:2px solid var(--line2);color:#fff;font-size:18px;font-weight:800;line-height:1;cursor:pointer;clip-path:none;transition:background .15s,border-color .15s}
+.chk:hover{border-color:var(--accent)}
+.plan.done .chk{background:var(--accent);border-color:var(--accent)}
+.plan .mini{padding:6px 0;width:34px;text-align:center}
+#plan-list>h4{margin-top:18px}
+
+#plan-list #clear-box{margin:12px 0 0}
